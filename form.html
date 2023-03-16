@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+    
+<?php
+
+$con=mysqli_connect("localhost","root","","bonheur");
+$id=$_POST['id'];
+$fname=$_POST['firstn'];
+$lname=$_POST['lastn'];
+$password=$_POST['password'];
+$location=$_POST['location'];
+?>
+<body>
+  <h1>Add user</h1>  
+    <label>id</label><br><br>
+    <input type="text" name="id"> <br>
+    <label>firstname</label><br><br>
+    <input type="text" name="firstn"><br>
+    <label>lastname</label><br><br>
+    <input type="text" name="lastn"><br>
+    <label>Password</label><br><br>
+    <input type="password" name="Password"><br>
+    <label>Location</label><br><br>
+    <input type="text" name="location"><br><br>
+    <input type="submit" value="insert-user"><br><br>
+
+    
+</body>
+</html>
